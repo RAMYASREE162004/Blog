@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding-left: 600px;
+            padding-top: 100px;
+            padding-bottom: 300px;
+            background-color:mintcream;
+
+        }
+        body{
+            background-size: cover;
+            color:cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <div class="container">
+        <h1>UPDATE POST</h1>
+        <label for="">Title:</label><br>
+        <input name="name" type="text" value="{{post[1]}}"><br>
+        <label for="">Content:</label><br>
+        <textarea name="content" rows="5">{{post[2]}}</textarea><br>
+        <label for="">Slug:</label><br>
+        <input name="slug" type="text" value="{{post[4]}}"><br><br>
+        <button>Update Post</button>
+        </div>
+    </form>
+</body>
+</html>
